@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "googleApiKey": {
+            "type": "string"
+        },
+        "spotify": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "clientId": {
+                    "type": "string"
+                },
+                "clientSecret": {
+                    "type": "string"
+                },
+                "redirectUri": {
+                    "type": "string"
+                }
+            }
+        },
+        "twitter": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "targetWords": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "consumerKey": {
+                    "type": "string"
+                },
+                "consumerSecret": {
+                    "type": "string"
+                },
+                "accessTokenKey": {
+                    "type": "string"
+                },
+                "accessTokenSecret": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
